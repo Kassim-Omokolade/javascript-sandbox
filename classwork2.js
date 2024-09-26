@@ -23,3 +23,38 @@ if (markBmi > johnBmi){
 }else{
     console.log(" mark's bmi and john's bmi are equal");
 }
+
+
+//functions
+//functions are use to run snippets of code
+
+let dolphinsScore = 96 + 108 + 89;
+let pandasScore = 88 + 91 + 110;
+
+let averageScore = dolphinsScore / 3;
+console.log(`average dolphin score is ${averageScore}`);
+
+let averageScorePanda = pandasScore / 3;
+console.log(`average pandas score is  ${averageScorePanda}`);
+
+if (averageScore > averageScorePanda) {
+  console.log("Dolphins win");
+} else if (averageScore < averageScorePanda) {
+  console.log("Panda wins");
+} else {
+  console.log("draw");
+}
+
+if (averageScore > averageScorePanda && averageScore >= 100) {
+  console.log("Dolphin wins");
+} else if (averageScorePanda > averageScore && averageScore >= 100) {
+  console.log("Panda wins");
+} else if (
+  averageScorePanda === averageScore &&
+  averageScore >= 100 &&
+  averageScorePanda >= 100
+) {
+  console.log("draw");
+} else {
+  console.log("no winner");
+}
